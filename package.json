@@ -1,0 +1,23 @@
+{
+  "name": "redshift-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rana-xD/redshift-lambda.git"
+  },
+  "author": "Rana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rana-xD/redshift-lambda/issues"
+  },
+  "homepage": "https://github.com/Rana-xD/redshift-lambda#readme",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "pg": "^7.8.1"
+  }
+}
