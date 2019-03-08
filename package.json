@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Rana-xD/redshift-lambda#readme",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "moment": "^2.24.0",
     "pg": "^7.8.1"
   }

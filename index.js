@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 const fs = require('fs');
 const moment = require('moment');
-
+require('dotenv').config()
 /**
  * JSONファイルからデータを抽出する
  */
@@ -10,11 +10,11 @@ let data = JSON.parse(rawData);
 
 let redshiftData = {};
 
-const REDSHIFT_HOST = 'daito-iot-redshift.cok2aoomnxsn.ap-northeast-1.redshift.amazonaws.com';
-const REDSHIFT_PORT = '5439';
-const REDSHIFT_DB = 'dev';
-const REDSHIFT_USER = 'awsuser';
-const REDSHIFT_PASSWORD = 'cNSj3QNEASc43nw';
+const REDSHIFT_HOST = process.env.REDSHIFT_HOST;
+const REDSHIFT_PORT = process.env.REDSHIFT_PORT;
+const REDSHIFT_DB = process.env.REDSHIFT_DB;
+const REDSHIFT_USER = process.env.REDSHIFT_USER;
+const REDSHIFT_PASSWORD = process.env.REDSHIFT_PASSWORD;
 
 /**
  * Redshiftへの接続を作成する
